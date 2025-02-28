@@ -1,7 +1,8 @@
 
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Sofia", sans-serif;
+    font-weight: 600;
 
     background-image: url("assets/bg.png");
     animation-duration: 16s;
@@ -31,7 +32,31 @@ body {
     margin-right: auto;
 }
 
-#courseSelect {
-    display: inline;
+#courseIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 384px;
+    width: 60%;
     float: none;
+    filter: drop-shadow(0 0 0.35rem rgba(0, 0, 0, 0.8));
+}
+
+.infoCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: none;
+}
+
+#courseSelect {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+
+    font-family: "Sofia", sans-serif;
+    font-weight: 400;
+    text-align: center;
 }

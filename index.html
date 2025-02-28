@@ -1,16 +1,23 @@
 <html>
     <head>
         <title>Jario Party TT</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+
         <link rel="stylesheet" href="style.css">
+        
     </head>
 
     <body onload="onLoad()">
 
         <div id="courseInfo">
-            <p>Select course:</p>
+            <p class="infoCenter">Select course:</p>
             <select id="courseSelect" onchange="onSelectionChange()">
                 <!-- filled out by the server -->
             </select>
+
+            <br>
+            <br>
+            <img id="courseIcon" src="assets/icons/MKS.png">
         </div>
 
     </body>
