@@ -1,0 +1,37 @@
+
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    background-image: url("assets/bg.png");
+    animation-duration: 16s;
+    animation-name: animateBackground;
+    animation-timing-function: linear;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes animateBackground {
+    from {
+        background-position-x: 189px;
+        background-position-y: 199px;
+    }
+    to {
+        background-position-x: 970px;
+        background-position-y: 600px;
+    }
+}
+
+#courseInfo {
+    padding-top: 8px;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#courseSelect {
+    display: inline;
+    float: none;
+}
