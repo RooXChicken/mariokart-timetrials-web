@@ -1,4 +1,4 @@
-const serverIP = "http://localhost:25532";
+const serverIP = "http://10.0.0.51:25532";
 let courses = null;
 let records = null;
 let selectedCourse = null;
@@ -56,13 +56,13 @@ async function submitTime() {
         _request.open("POST", serverIP + "/api/submit?name=" + _name + "?time=" + _time + "?img=" + _imageUrl + "?course=" + selectedCourse.id, true);
         _request.setRequestHeader('Content-Type', "text/plain");
         _request.send(arrayBufferToBase64(this.result));
-
-        // await apiRequest("submit?name=" + _name + "?time=" + _time + "?img=" + _imageUrl + "?course=" + selectedCourse.id);
-    });    
+    });
     
     _reader.readAsArrayBuffer(_file);
 
-    getCourseRecords();
+    setTimeout(() => {
+        getCourseRecords();
+    }, 1000);
 }
 
 async function getCourseRecords() {
