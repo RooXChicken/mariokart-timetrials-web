@@ -50,6 +50,19 @@ body {
     float: none;
 }
 
+#playerName, #playerTime {
+    display: inline;
+    text-align: left;
+}
+
+.inputLabel {
+    display: inline;
+}
+
+.courseProof {
+    max-height: 128px;
+}
+
 #courseSelect {
     display: block;
     margin-left: auto;

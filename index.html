@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Jario Party TT</title>
@@ -18,7 +19,21 @@
             <br>
             <br>
             <img id="courseIcon" src="assets/icons/MKS.png">
+            <br>
+            <p class="inputLabel">Name:</p> <input id="playerName" class="infoCenter"><br>
+            <p class="inputLabel">Time:</p> <input id="playerTime" class="infoCenter"><br>
+            <input id="playerScreenshot" accept="image/*" type="file">
+            <br>
+            <button id="submitTime" onclick="submitTime()">Submit</button>
         </div>
+
+        <table id="records">
+            <tr>
+                <th><p>Name</p></th>
+                <th><p>Time</p></th>
+                <th><p>Proof</p></th>
+            </tr>
+        </table>
 
     </body>
 
