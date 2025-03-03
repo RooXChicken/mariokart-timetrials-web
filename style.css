@@ -5,7 +5,7 @@ body {
     font-weight: 600;
 
     background-image: url("assets/bg.png");
-    animation-duration: 16s;
+    animation-duration: 32s;
     animation-name: animateBackground;
     animation-timing-function: linear;
 
