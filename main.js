@@ -1,4 +1,4 @@
-const serverIP = "http://10.0.0.51:25532";
+const serverIP = "https://jp-mktt.loveroo.org:25532";
 let courses = null;
 let records = null;
 let selectedCourse = null;
@@ -40,11 +40,25 @@ async function apiRequest(_request) {
 async function submitTime() {
     let _name = playerName.value;
     let _time = playerTime.value;
+
+    if(playerScreenshot.files.length <= 0) {
+        window.alert("Please attach a proof screenshot! (there is no trust)");
+        return;
+    }
     const _file = playerScreenshot.files[0];
     
-    if(_file.size > 8000000)
-    {
+    if(_file.size > 8000000) {
         window.alert("This file is too large! (8mb+)")
+        return;
+    }
+
+    if(_name.length <= 0 || _name.length > 32) {
+        window.alert("Invalid name!");
+        return;
+    }
+
+    if(_time.length != 8 || _time[1] != ":" || _time[4] != ".") {
+        window.alert("Invalid time! (X:XX.XXX)");
         return;
     }
         

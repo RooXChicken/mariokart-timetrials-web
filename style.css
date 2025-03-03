@@ -63,6 +63,13 @@ body {
     max-height: 128px;
 }
 
+#records {
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #courseSelect {
     display: block;
     margin-left: auto;
