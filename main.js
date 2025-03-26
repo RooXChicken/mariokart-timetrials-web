@@ -67,7 +67,7 @@ async function submitTime() {
     
     _reader.addEventListener("load", async function () {
         let _request = new XMLHttpRequest();
-        _request.open("POST", serverIP + "/api/submit?name=" + _name + "?time=" + _time + "?img=" + _imageUrl + "?course=" + selectedCourse.id, true);
+        _request.open("POST", serverIP + "/api/jp-mktt/submit?name=" + _name + "?time=" + _time + "?img=" + _imageUrl + "?course=" + selectedCourse.id, true);
         _request.setRequestHeader('Content-Type', "text/plain");
         _request.send(arrayBufferToBase64(this.result));
     });
