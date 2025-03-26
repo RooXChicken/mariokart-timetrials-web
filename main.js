@@ -1,4 +1,4 @@
-const serverIP = "https://jp-mktt.loveroo.org:25532";
+const serverIP = "https://api.loveroo.org";
 let courses = null;
 let records = null;
 let selectedCourse = null;
@@ -31,7 +31,7 @@ async function onSelectionChange() {
 }
 
 async function apiRequest(_request) {
-    const url = serverIP + "/api/" + _request;
+    const url = serverIP + "/api/jp-mktt/" + _request;
     const response = await fetch(url);
 
     return await response.text();
